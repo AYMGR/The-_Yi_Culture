@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族文化艺术</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content-block {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .sub-section {
+            margin: 20px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #e67e22;
+            margin-bottom: 15px;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "•";
+            color: #e67e22;
+            position: absolute;
+            left: 0;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .comment-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .btn {
+            background: #e67e22;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #d35400;
+        }
+
+        .poll-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .poll-option {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .poll-option input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 语言文字板块 -->
+        <section class="section" id="language">
+            <h2 class="section-title">语言文字</h2>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">语音特点</h3>
+                <div class="content-block">
+                    <div class="text-content">
+                        <audio class="audio-player" controls></audio>
+                            <source src="videos/yuyitd.mp4" type="audio/mpeg">
+                            您的浏览器不支持音频播放。
+                        </audio>
+                        <p>彝族语言有着独特且丰富的语音特点，彰显出其深厚的民族文化底蕴。
+                            
+                            在声调方面，彝族语声调变化丰富，不同方言区声调数量在3 - 5个之间。例如北部方言区有4个声调，东部方言区可达5个。这些声调各具特色，调值、调型变化多样，或高扬起降，或低缓曲折。而且声调的作用至关重要，常常仅凭声调不同，同一个音节就能表示截然不同的意思。像音节“zi”，读不同声调时，有的表示“房子”，有的则代表“吃”等含义，所以准确把握声调是理解和运用彝族语的关键。
+                            
+                            声韵调配合上有着严谨规律。声母、韵母与声调相互搭配并非随意，特定的声母搭配某类韵母，再结合相应声调，才能组成合理的音节去表达相应词汇。比如舌尖音声母与开口呼韵母搭配特定声调，多用于表示生活中的常见事物，这种规则体现了彝族语音结构的逻辑性。
+                            
+                            从音节结构看，既有由声母、韵母、声调构成的常规音节，也存在零声母音节。韵母类型丰富，单元音韵母发音纯净，复元音韵母过渡自然，带鼻音韵母余韵悠长，组合出众多音节。
+                            
+                            再者，各方言区语音存在明显差异。北部方言声母清浊对立明显，发音硬朗；东部方言韵母更丰富，发音细腻；南部方言语调相对柔和。这些差异反映地域文化影响，共同构成了彝族语言多彩的语音世界，承载着彝族的历史与文化传承。 </p>
+                        
+                    </div>
+                    <div class="image-content">
+                        <img src="images/shendiao.jpg" alt="彝语声调示意图">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">彝文书写系统</h3>
+                <div class="content-block">
+                    <div class="text-content">
+                        <ul class="feature-list">
+                            <li>历史沿革：彝文历史久远，起源说法众多，历经漫长演变，在彝族历史文化传承里扮演关键角色，诸多彝文古籍见证了其深厚底蕴。</li>
+                            <li>构造特点：属表意文字，部分含表音成分。笔画多样，结构有独体与合体字之分，通过不同部件组合成丰富字符体系，不少字符形象地体现事物形态或概念。</li>
+                            <li>书写规则
+                                <li>顺序：常规按从左到右、从上到下书写，特殊场景会有变化。</li>
+                                <li>笔画：起笔、行笔、收笔皆有规范，保证字符美观易认。</li>
+                                <li>格式：书写有边框、字数、间距等格式讲究，长文还有页码、篇章划分安排。</li></li>
+                            <li>书写工具:传统常用竹笔、毛笔搭配自制墨水，竹笔、毛笔制作各有讲究，墨水多以天然材料调制。</li>
+                            <li>现代传承:在彝族地区学校开设有课程，文化工作者推动书法创作与展览，且在文化标识、文创产品等多方面仍有应用，持续传承彝族文化。</li>
+                        </ul>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/yiweng.webp" alt="彝文书写示例">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 传统服饰板块 -->
+        <section class="section" id="costume">
+            <h2 class="section-title">传统服饰</h2>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">凉山彝族服饰</h3>
+                <div class="content-block">
+                    <div class="text-content">
+                        <p>历史渊源：凉山彝族服饰历史悠久，据彝文史籍《万物起源》记载，其形成期较早，在春秋至秦汉时期，以 “椎髻”“编发”“衣皆著尾” 为基本特征的彝族服饰便开始形成。</p>
+                        <p>服装特点：</p>
+                            <p>款式多样：凉山彝族服饰的款式多样，根据地域、生态、语言等不同可分为义诺、圣扎、所地 3 个方言服饰，每个方言区的服饰又各具特色。
+                                色彩丰富：凉山彝族服饰的色彩较为丰富，一般以黑、青、蓝等深色为底色，配以红、黄、绿等鲜艳的颜色，形成强烈的对比。
+                                装饰精美：凉山彝族服饰的装饰非常精美，常采用刺绣、银饰、珠饰等工艺，绣有各种精美的图案，如日、月、星、云、彩虹、叶、花、鸡冠、羊角等。
+                                材质多样：凉山彝族服饰的材质多样，有毛、棉、麻织品、绸缎、以及羊、牛、兽皮等。</p>
+                        <p>男女服饰区别：</p>
+                            <p>男子服饰：凉山彝族男子一般穿黑色窄袖且镶有花边的右开襟上衣，下着多褶宽脚长裤，头顶留有约三寸长的头发一绺，汉语称为 “天菩萨”，彝语称为 “子尔”，外面裹以长达丈余的青或蓝、黑色包头，右前方扎成拇指粗的长椎形的 “子尔”—— 汉语称 “英雄髻”。
+                                女子服饰：凉山彝族女子一般穿镶边或绣花的大襟右衽上衣，戴黑色包头、耳环，领口别有银排花，着长裤或裙。色彩上以红、黄、黑为主，儿童服饰、青年服饰、中年服饰、老年服饰又各有不同，儿童服饰和青年服饰的颜色比较艳丽，中年服饰和老年服饰的颜色比较素雅。</p>
+                        <p>服饰的意义：凉山彝族服饰不仅是一种穿着方式，更是彝族文化的重要组成部分，它承载着彝族人民的历史、文化、宗教信仰和生活方式等方面的信息，具有重要的文化价值和艺术价值。</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/yifu1.png" alt="凉山彝族传统服饰">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">服饰工艺</h3>
+                <div class="video-container">
+                    <iframe src="videos/fsgy.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 民间艺术板块 -->
+        <section class="section" id="folk-art">
+            <h2 class="section-title">民间艺术</h2>
+            
+            <div class="sub-section">
+                <h3 class="sub-title">音乐舞蹈</h3>
+                <div class="content-block">
+                    <div class="text-content">
+                        <audio class="audio-player" controls></audio>
+                            <source src="audio/gequ.mp4" type="audio/mpeg">
+                            您的浏览器不支持音频播放。
+                        </audio>
+                        <p>彝族传统音乐</p>
+                            <p>整体风格特点：彝族传统音乐风格浓郁且独特，旋律常常带有浓厚的山地民族风情，古朴而悠扬，节奏或自由舒缓、或明快活泼，具有很强的即兴性，能够生动地展现出彝族人民丰富的内心情感以及多姿多彩的生活场景。</p>
+                            <p>山歌特色：</p>
+                                <p>音域与旋律：彝族山歌尤为突出，其音域宽广，旋律往往高亢嘹亮，能在山间旷野中传得很远。歌手们可以凭借高超的演唱技巧，让歌声婉转起伏，如行云流水般穿梭在山谷之间，仿佛与大自然的风声、水声相呼应，极具感染力。
+                                    歌词内容：歌词大多取材于日常生活，像表达男女之间质朴热烈的爱情，描绘辛勤的劳动画面，赞美壮丽秀美的山川河流，或是讲述彝族古老的传说故事等，内容十分丰富，且充满生活气息与民族文化韵味。
+                                    演唱形式：演唱形式多样，常见的有独唱，歌手们用嘹亮的嗓音尽情抒发自己的情感；还有对唱形式，多出现于青年男女之间，以歌传情、相互打趣，展现出别样的浪漫；合唱则常在集体劳动、节日庆典等场合出现，众人齐心协力高歌，气势磅礴，营造出热闹欢快的氛围。
+                                    其他音乐类型：除了山歌外，彝族还有丰富的民间小调、情歌以及各种用于祭祀、婚丧嫁娶等仪式场合的传统乐曲。比如在祭祀活动中，音乐庄严肃穆，通过特定的乐器演奏和吟唱，传递着对祖先神灵的敬重与祈愿；而情歌则旋律轻柔，歌词细腻，将恋人间的绵绵情意娓娓道来。
+                                    乐器运用：彝族传统乐器种类繁多，且各具特色，为音乐增色不少。像月琴，音色清脆明亮，弹奏起来节奏明快，常作为山歌演唱时的伴奏乐器，或单独演奏展现出灵动活泼的韵味；还有口弦，小巧便携，通过演奏者巧妙地用手指拨弄，能发出如鸟鸣般婉转清脆的声音，多用于表达细腻的情感；此外，葫芦笙的声音悠扬醇厚，在舞蹈表演时常常作为重要的伴奏乐器，带动起欢快热烈的节奏。</p>
+                        <p>彝族传统舞蹈</p>
+                            <p>总体特征：彝族传统舞蹈形式多样、风格各异，大多与彝族人民的生活、信仰、民俗紧密相连，具有鲜明的民族特色和浓郁的生活气息。舞者们通过丰富的肢体动作、多变的舞步以及富有节奏感的舞动，展现出彝族人民热情豪爽、积极向上的精神风貌以及对生活的热爱、对美好未来的憧憬。</p>
+                            <p>达体舞特点：</p>
+                            <p>舞步：达体舞的舞步简单易学却不失优雅大方，动作舒展自然，多以平移、转身、摆手、跺脚等基础动作为元素，相互组合搭配，形成流畅连贯且富有韵律感的舞蹈动作。舞者们在舞动时，身体姿态轻盈协调，仿佛与音乐融为一体，展现出一种轻松愉悦的氛围。
+                                节奏：节奏平稳而舒缓，通常由简单且规律的鼓点、乐器声作为伴奏，引导着舞者的步伐和动作，使整个舞蹈在节奏的把控下，显得有条不紊，充满了和谐之美。
+                                文化内涵：达体舞常常出现在彝族的各类节日聚会、社交场合中，是人们交流情感、增进友谊、传承文化的重要方式。大家手拉手围成圈，或是两两相对，随着音乐翩翩起舞，这种集体参与的形式不仅拉近了人与人之间的距离，更让彝族的传统文化在欢声笑语和舞动中得以代代相传。
+                                阿细跳月特点：
+                                舞步：阿细跳月的舞步则更为欢快热烈，充满活力。舞者们以轻快的跳动、有力的跺脚以及大幅度的摆手等动作为主，脚步移动迅速，动作变换频繁，整个舞蹈过程中，舞者们犹如跳跃在火焰之上，洋溢着无尽的热情与活力，极具观赏性。
+                                节奏：其节奏独特且鲜明，采用快速的 5/4 拍节奏，这种不对称的节奏打破常规，营造出一种独特的律动感，让舞蹈更显活泼、欢快，能够迅速带动起现场的气氛，使参与者和观看者都沉浸在热烈的氛围之中。
+                                文化内涵：阿细跳月与彝族的爱情、祭祀等传统习俗密切相关，承载着深厚的民族历史记忆和情感寄托。在过去，年轻男女常通过跳阿细跳月寻觅心仪的对象，以舞传情；在一些重要的祭祀场合，人们也会跳起阿细跳月，祈求神灵庇佑、风调雨顺、五谷丰登，表达对美好生活的向往和对祖先的缅怀之情。</p>
+                        
+                    </div>
+                    <div class="video-container">
+                        <iframe src="videos/gequ.mp4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">工艺制作</h3>
+                <div class="content-block">
+                    <div class="text-content">
+                        <ul class="feature-list">
+                            <li>漆器工艺
+                                <li>选材精良：制作彝族漆器通常选用优质的杜鹃木、桦木等木材作为胎体。这些木材质地坚韧、纹理细腻，不易变形，为后续的制作工序打下良好基础。例如，杜鹃木生长在彝族地区的山林间，取材方便且本身就带有一种自然的质朴美感。
+                                    制作工序复杂：先是砍坯，工匠们依据设计将木材砍削成大致的形状；接着进行细致的打磨，使表面光滑平整，便于后续上漆和绘图。打底环节，会涂抹多层特制的底漆，增强漆器的附着力和光泽度。然后便是关键的绘图工序，彝族漆器的图案多源于自然、生活与神话传说，像日月星辰、山川河流以及彝族传统的羊角纹等，工匠们用自制的颜料，以精湛的绘画技巧将这些图案描绘其上。最后是髹漆，反复多次涂抹天然漆料，让漆器色泽更加饱满、持久亮丽。
+                                    色彩搭配独特：红、黄、黑三色是彝族漆器的主色调，红色象征着热情与活力，黄色寓意吉祥美好，黑色代表庄重神秘，它们相互搭配，营造出鲜明而庄重的视觉效果，使得漆器在兼具实用价值的同时，极具艺术观赏性。</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/gyp.jpg" alt="彝族传统工艺品">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 互动区域 -->
+        <div class="comment-section">
+            <h3 class="sub-title">留言交流</h3>
+            <form class="comment-form">
+                <textarea placeholder="分享您的想法..." rows="4"></textarea>
+                <button type="submit" class="btn">发表评论</button>
+            </form>
+        </div>
+
+        <div class="poll-section">
+            <h3 class="sub-title">投票调查</h3>
+            <form>
+                <p>您最感兴趣的彝族文化艺术形式是？</p>
+                <label class="poll-option">
+                    <input type="radio" name="art-form" value="language"> 语言文字
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="art-form" value="costume"> 传统服饰
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="art-form" value="music-dance"> 音乐舞蹈
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="art-form" value="handicraft"> 传统工艺
+                </label>
+                <button type="submit" class="btn">提交投票</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // 留言交流功能
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentForm = document.querySelector('.comment-form');
+        const commentSection = document.querySelector('.comment-section');
+
+        commentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const textarea = this.querySelector('textarea');
+            const commentText = textarea.value.trim();
+            
+            if(commentText) {
+                // 创建新的评论元素
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.style.margin = '1rem 0';
+                commentDiv.style.padding = '1rem';
+                commentDiv.style.backgroundColor = '#f5f5f5';
+                commentDiv.style.borderRadius = '5px';
+                
+                // 添加评论时间
+                const now = new Date();
+                const timeString = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}`;
+                
+                commentDiv.innerHTML = `
+                    <p style="margin-bottom: 0.5rem">${commentText}</p>
+                    <small style="color: #666">${timeString}</small>
+                `;
+                
+                // 将新评论插入到表单之前
+                commentForm.parentNode.insertBefore(commentDiv, commentForm);
+                
+                // 清空输入框
+                textarea.value = '';
+            }
+        });
+    });
+
+    // 投票调查功能
+    document.addEventListener('DOMContentLoaded', function() {
+        const pollForm = document.querySelector('.poll-section form');
+        const results = {
+            'language': 0,
+            'costume': 0,
+            'music-dance': 0,
+            'handicraft': 0
+        };
+        
+        pollForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const selectedOption = this.querySelector('input[name="art-form"]:checked');
+            if(selectedOption) {
+                // 更新投票结果
+                results[selectedOption.value]++;
+                
+                // 创建结果显示区域
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'poll-results';
+                resultDiv.style.marginTop = '1rem';
+                
+                // 计算总票数和百分比
+                const total = Object.values(results).reduce((a, b) => a + b, 0);
+                
+                // 生成结果HTML
+                const resultHTML = Object.entries(results).map(([key, votes]) => {
+                    const percent = ((votes / total) * 100).toFixed(1);
+                    const label = {
+                        'language': '语言文字',
+                        'costume': '传统服饰',
+                        'music-dance': '音乐舞蹈',
+                        'handicraft': '传统工艺'
+                    }[key];
+                    
+                    return `
+                        <div style="margin: 0.5rem 0">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.2rem">
+                                <span>${label}</span>
+                                <span>${percent}%</span>
+                            </div>
+                            <div style="background-color: #eee; height: 20px; border-radius: 10px">
+                                <div style="background-color: #654747; width: ${percent}%; height: 100%; border-radius: 10px"></div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                resultDiv.innerHTML = `
+                    <h4 style="margin-bottom: 1rem">投票结果（共${total}票）：</h4>
+                    ${resultHTML}
+                `;
+                
+                // 替换表单为结果显示
+                this.style.display = 'none';
+                if(this.parentNode.querySelector('.poll-results')) {
+                    this.parentNode.querySelector('.poll-results').remove();
+                }
+                this.parentNode.appendChild(resultDiv);
+            }
+        });
+    });
+</script>
+
+

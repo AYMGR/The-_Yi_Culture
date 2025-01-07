@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族艺术成就</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 音乐舞蹈板块样式 */
+        .music-dance {
+            background-color: #fff3e6;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-left: 6px solid #ff9933;
+        }
+
+        /* 民间工艺板块样式 */
+        .folk-craft {
+            background-color: #f5e6d3;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-left: 6px solid #8b4513;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #444;
+        }
+
+        .subsection {
+            margin-bottom: 30px;
+        }
+
+        .subsection-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .media-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .media-content img, 
+        .media-content video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        /* 互动区域样式 */
+        .interaction {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .comments {
+            margin-top: 30px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .share-button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4267B2;
+            color: white;
+            cursor: pointer;
+        }
+
+        .share-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 音乐舞蹈板块 -->
+        <section class="music-dance">
+            <h1 class="section-title">音乐舞蹈</h1>
+            
+            <!-- 传统音乐风格 -->
+            <div class="subsection">
+                <h2 class="subsection-title">传统音乐风格</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <h3>彝族山歌</h3>
+                        <p>彝族山歌以其音域宽广、旋律高亢嘹亮且婉转悠扬著称。歌词内容丰富多样，多围绕劳动生活、爱情表达、自然赞美等主题展开。演唱形式包括独唱、对唱、合唱等多种形式。</p>
+                    </div>
+                    <div class="media-content">
+                        <img src="images/sg.webp" alt="彝族山歌表演场景">
+                        <audio class="audio-player" controls>
+                            <source src="audio/yi-mountain-song.mp3" type="audio/mpeg">
+                            您的浏览器不支持音频播放。
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 传统舞蹈 -->
+            <div class="subsection">
+                <h2 class="subsection-title">传统舞蹈</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <h3>达体舞</h3>
+                        <p>达体舞以其舒展大方的动作特点闻名，舞步简单易学，以平移、转身、摆手等动作为主。舞蹈节奏平稳富有韵律感，常配合鼓点等乐器伴奏，在节日聚会、社交场合中广受欢迎。</p>
+                    </div>
+                    <div class="media-content">
+                        <video controls>
+                            <source src="videos/dati.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 民间工艺板块 -->
+        <section class="folk-craft">
+            <h1 class="section-title">民间工艺</h1>
+            
+            <!-- 漆器制作 -->
+            <div class="subsection">
+                <h2 class="subsection-title">漆器制作</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>彝族漆器制作工艺精湛，从选材到成品需经过砍坯、打磨、打底、绘图、髹漆等多道工序。传统图案与现代设计的结合，使漆器既保持着浓郁的民族特色，又展现出与时俱进的创新魅力。</p>
+                    </div>
+                    <div class="media-content">
+                        <img src="images/gyp.jpg" alt="漆器图片">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 刺绣 -->
+            <div class="subsection">
+                <h2 class="subsection-title">刺绣</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>彝族刺绣以其针法多样、图案精美著称。常见图案包括蝴蝶、石榴等，分别象征着生命繁衍、多子多福等美好寓意。色彩运用鲜艳和谐，在现代服饰、家居饰品等领域得到广泛应用。</p>
+                    </div>
+                    <div class="media-content">
+                        <img src="images/cixiu.webp" alt="彝族刺绣作品">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 互动区域 -->
+        <section class="interaction">
+            <h2 class="section-title">互动交流</h2>
+            
+            <!-- 评论区 -->
+            <div class="comments">
+                <form class="comment-form">
+                    <textarea placeholder="分享您的想法..." rows="4"></textarea>
+                    <button type="submit" class="share-button">发表评论</button>
+                </form>
+            </div>
+
+            <!-- 分享按钮 -->
+            <div class="share-buttons">
+                <button class="share-button">分享到微信</button>
+                <button class="share-button">分享到微博</button>
+                <button class="share-button">分享到QQ</button>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // 评论提交处理
+        document.querySelector('.comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const comment = this.querySelector('textarea').value;
+            if (comment.trim()) {
+                alert('评论提交成功！');
+                this.reset();
+            }
+        });
+
+        // 分享功能
+        document.querySelectorAll('.share-button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('分享功能开发中...');
+            });
+        });
+    </script>
+</body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取DOM元素
+    const commentForm = document.querySelector('.comment-form');
+    const commentTextarea = commentForm.querySelector('textarea');
+
+    // 创建评论列表容器
+    const commentsList = document.createElement('div');
+    commentsList.className = 'comments-list';
+    document.querySelector('.comments').appendChild(commentsList);
+
+    // 从localStorage获取评论数据
+    let comments = JSON.parse(localStorage.getItem('artComments') || '[]');
+
+    // 渲染评论列表
+    function renderComments() {
+        commentsList.innerHTML = comments.map((comment, index) => `
+            <div class="comment-item">
+                <div class="comment-header">
+                    <span class="comment-user">游客${Math.floor(Math.random() * 1000)}</span>
+                    <span class="comment-date">${comment.date}</span>
+                </div>
+                <div class="comment-content">${comment.content}</div>
+                <div class="comment-actions">
+                    <button onclick="likeComment(${index})">
+                        👍 ${comment.likes || 0}
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // 点赞功能
+    window.likeComment = function(index) {
+        comments[index].likes = (comments[index].likes || 0) + 1;
+        localStorage.setItem('artComments', JSON.stringify(comments));
+        renderComments();
+    };
+
+    // 提交评论
+    commentForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const content = commentTextarea.value.trim();
+        
+        if(content) {
+            comments.unshift({
+                content: content,
+                date: new Date().toLocaleString(),
+                likes: 0
+            });
+            
+            localStorage.setItem('artComments', JSON.stringify(comments));
+            renderComments();
+            commentTextarea.value = '';
+        }
+    });
+
+    // 初始渲染评论
+    renderComments();
+});
+</script>
+
+<style>
+.comments {
+    margin: 20px 0;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment-item {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.comment-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comment-user {
+    color: #666;
+    font-weight: bold;
+}
+
+.comment-date {
+    color: #999;
+}
+
+.comment-content {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.comment-actions button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.comment-actions button:hover {
+    color: #8B4513;
+}
+
+.share-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.share-button {
+    background-color: #8B4513;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.share-button:hover {
+    background-color: #6b3410;
+}
+</style>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 彝族文化网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .member-card {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .member-position {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #e74c3c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 网站介绍 -->
+    <section class="section">
+        <h2 class="section-title">网站介绍</h2>
+        <div class="content">
+            <p>我们旨在传承和弘扬彝族文化，让更多人了解彝族悠久的历史、独特的风俗习惯和灿烂的艺术成就。本网站涵盖彝族文化全方位内容，通过丰富的图文、视频资料，以及互动交流平台，为您带来沉浸式的彝族文化体验。</p>
+            <p>我们定期更新网站内容，确保您能获取到最新、最准确的彝族文化资讯，同时保障网站的稳定运行，为您提供良好的浏览体验。</p>
+        </div>
+    </section>
+
+    <!-- 团队成员 -->
+    <section class="section">
+        <h2 class="section-title">团队成员</h2>
+        <div class="team-members">
+            <div class="member-card">
+                <img src="images/hua.jpg" alt="阿花" class="member-photo">
+                <h3 class="member-name">阿花</h3>
+                <p class="member-position">达达嘛</p>
+                <p>凉山汉堡研究专家，从事凉山汉堡研究工作15年</p>
+            </div>
+            <div class="member-card">
+                <img src="images/sha.jpg" alt="小莎莎" class="member-photo">
+                <h3 class="member-name">小莎莎</h3>
+                <p class="member-position">斯惹木哟</p>
+                <p>斯惹学研究硕士，专注于斯re文化传播</p>
+            </div>
+            <div class="member-card">
+                <img src="images/gaga.jpg" alt="呷呷呷" class="member-photo">
+                <h3 class="member-name">呷呷呷</h3>
+                <p class="member-position">色噶阿多</p>
+                <p>资深舔狗，负责给抖音同城帅哥发私信</p>
+            </div>
+        </div>
+        <div class="content">
+            <p>我们秉持着对凉山汉堡，斯惹和帅哥的热爱与敬畏之心，致力于打造一个优质、专业的传播平台。</p>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="section">
+        <h2 class="section-title">联系方式</h2>
+        <ul class="contact-info">
+            <li><i class="icon-email"></i>邮箱：shamaagamo@gmail.com
+            </li>
+            <li><i class="icon-phone"></i>电话：028-12345678</li>
+            <li><i class="icon-weixin"></i>微信公众号：彝族文化传承</li>
+        </ul>
+        <div class="content">
+            <p>如果您对网站内容有任何疑问或建议，欢迎随时与我们联系，我们将竭诚为您服务。</p>
+        </div>
+    </section>
+
+    <!-- 版权声明 -->
+    <footer class="footer">
+        <p>© 2024 呷呷呷 版权所有</p>
+        <p>本网站所有内容版权归凉山汉堡，斯惹和舔狗所有，未经授权禁止转载。我们高度重视用户隐私保护，严格遵守相关法律法规，确保您的个人信息安全。</p>
+    </footer>
+</body>
+</html>

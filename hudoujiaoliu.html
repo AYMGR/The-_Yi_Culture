@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动交流</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 论坛留言板样式 */
+        .forum-section {
+            background-color: #e6f3ff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .forum-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .message-list {
+            margin-bottom: 20px;
+        }
+
+        .message-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .message-content {
+            margin-bottom: 10px;
+        }
+
+        .message-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .message-input {
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* 在线调查投票样式 */
+        .survey-section {
+            background-color: #fff9e6;
+            border: 2px solid #ffd700;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .survey-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .survey-options {
+            margin-bottom: 20px;
+        }
+
+        .option-item {
+            margin-bottom: 15px;
+        }
+
+        .survey-results {
+            margin-top: 20px;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        /* 规则说明样式 */
+        .rules-section {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 论坛留言板 -->
+        <section class="forum-section">
+            <h2 class="forum-title">论坛留言板</h2>
+            <div class="message-list">
+                <!-- 示例留言 -->
+                <div class="message-item">
+                    <div class="message-header">
+                        <span class="user-name">用户123</span>
+                        <span class="time">2024-01-20 14:30</span>
+                    </div>
+                    <div class="message-content">
+                        彝族的火把节真的很有特色，每年都特别期待！
+                    </div>
+                    <div class="message-actions">
+                        <button class="btn btn-secondary">回复</button>
+                        <button class="btn">点赞 (5)</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="message-form">
+                <textarea class="message-input" placeholder="分享您的想法..."></textarea>
+                <button class="btn btn-primary">发表留言</button>
+            </div>
+        </section>
+
+        <!-- 在线调查投票 -->
+        <section class="survey-section">
+            <h2 class="survey-title">在线调查</h2>
+            <div class="survey-content">
+                <h3>您最喜欢的彝族传统节日是？</h3>
+                <div class="survey-options">
+                    <div class="option-item">
+                        <input type="radio" name="festival" id="torch">
+                        <label for="torch">火把节</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="festival" id="new-year">
+                        <label for="new-year">彝族年</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" name="festival" id="other">
+                        <label for="other">其他</label>
+                    </div>
+                </div>
+                <button class="btn btn-primary">提交投票</button>
+                <button class="btn btn-secondary">查看结果</button>
+            </div>
+        </section>
+
+        <!-- 互动规则说明 -->
+        <section class="rules-section">
+            <h3>互动规则</h3>
+            <ul>
+                <li>请文明发言，禁止发布违法违规内容</li>
+                <li>请勿恶意刷屏或发布垃圾广告</li>
+                <li>尊重他人观点，理性交流讨论</li>
+            </ul>
+            <p style="color: #666; margin-top: 10px;">
+                快来分享您对彝族文化的独特见解吧！您的每一次参与都将帮助我们更好地传承彝族文化！
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // 这里可以添加交互功能的JavaScript代码
+        // 例如：处理留言提交、投票提交、显示结果等功能
+    </script>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 留言功能
+        const messageForm = document.querySelector('.message-form');
+        const messagesContainer = document.createElement('div');
+        messagesContainer.className = 'messages-container';
+        messageForm.parentNode.insertBefore(messagesContainer, messageForm);
+
+        // 从localStorage获取留言数据
+        let messages = JSON.parse(localStorage.getItem('messages') || '[]');
+
+        // 渲染留言
+        function renderMessages() {
+            messagesContainer.innerHTML = messages.map((message, index) => `
+                <div class="message" style="margin: 1rem 0; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="color: #654747;">访客 #${index + 1}</span>
+                        <span style="color: #999; font-size: 0.9rem;">${message.date}</span>
+                    </div>
+                    <p style="margin: 0;">${message.content}</p>
+                </div>
+            `).join('');
+        }
+
+        // 初始渲染留言
+        renderMessages();
+
+        // 处理留言提交
+        messageForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const textarea = this.querySelector('.message-input');
+            const content = textarea.value.trim();
+
+            if (content) {
+                const newMessage = {
+                    content: content,
+                    date: new Date().toLocaleString()
+                };
+
+                messages.unshift(newMessage);
+                localStorage.setItem('messages', JSON.stringify(messages));
+                renderMessages();
+                textarea.value = '';
+
+                // 显示成功提示
+                const successMessage = document.createElement('div');
+                successMessage.textContent = '留言发表成功！';
+                successMessage.style.cssText = 'color: #4CAF50; margin-top: 0.5rem;';
+                this.appendChild(successMessage);
+                setTimeout(() => successMessage.remove(), 3000);
+            }
+        });
+
+        // 投票功能
+        const surveySection = document.querySelector('.survey-section');
+        const submitVoteBtn = surveySection.querySelector('.btn-primary');
+        const showResultsBtn = surveySection.querySelector('.btn-secondary');
+        
+        // 从localStorage获取投票数据
+        let voteResults = JSON.parse(localStorage.getItem('voteResults') || '{"torch": 0, "new-year": 0, "other": 0}');
+
+        // 处理投票提交
+        submitVoteBtn.addEventListener('click', function() {
+            const selectedOption = document.querySelector('input[name="festival"]:checked');
+            
+            if (selectedOption) {
+                voteResults[selectedOption.id]++;
+                localStorage.setItem('voteResults', JSON.stringify(voteResults));
+                showResults();
+                
+                // 显示成功提示
+                const successVote = document.createElement('div');
+                successVote.textContent = '投票成功！';
+                successVote.style.cssText = 'color: #4CAF50; margin-top: 0.5rem;';
+                surveySection.appendChild(successVote);
+                setTimeout(() => successVote.remove(), 3000);
+            }
+        });
+
+        // 显示投票结果
+        showResultsBtn.addEventListener('click', showResults);
+
+        function showResults() {
+            const total = Object.values(voteResults).reduce((a, b) => a + b, 0);
+            const resultDiv = document.createElement('div');
+            resultDiv.className = 'vote-results';
+            resultDiv.style.marginTop = '1rem';
+
+            const labels = {
+                'torch': '火把节',
+                'new-year': '彝族年',
+                'other': '其他'
+            };
+
+            const resultHTML = Object.entries(voteResults).map(([key, votes]) => {
+                const percent = total ? ((votes / total) * 100).toFixed(1) : 0;
+                return `
+                    <div style="margin: 0.5rem 0">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.2rem">
+                            <span>${labels[key]}</span>
+                            <span>${percent}%（${votes}票）</span>
+                        </div>
+                        <div style="background-color: #eee; height: 20px; border-radius: 10px">
+                            <div style="background-color: #654747; width: ${percent}%; height: 100%; border-radius: 10px"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            resultDiv.innerHTML = `
+                <h4 style="margin-bottom: 1rem">投票结果（共${total}票）：</h4>
+                ${resultHTML}
+            `;
+
+            // 移除旧的结果显示（如果存在）
+            const oldResult = surveySection.querySelector('.vote-results');
+            if (oldResult) oldResult.remove();
+            
+            surveySection.appendChild(resultDiv);
+        }
+
+        // 为留言表单添加提交事件
+        messageForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button');
+            if (button) button.click();
+        });
+    });
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const messageForm = document.querySelector('.message-form');
+    const messageList = document.querySelector('.message-list');
+    
+    // 从localStorage获取留言数据
+    let messages = JSON.parse(localStorage.getItem('forumMessages') || '[]');
+
+    // 渲染留言列表
+    function renderMessages() {
+        messageList.innerHTML = messages.map((message, index) => `
+            <div class="message-item">
+                <div class="message-header">
+                    <span class="user-name">用户${Math.floor(Math.random() * 1000)}</span>
+                    <span class="time">${message.date}</span>
+                </div>
+                <div class="message-content">
+                    ${message.content}
+                </div>
+                <div class="message-actions">
+                    <button class="btn btn-secondary" onclick="showReplyForm(${index})">回复</button>
+                    <button class="btn ${message.liked ? 'btn-primary' : ''}" onclick="toggleLike(${index})">
+                        点赞 (${message.likes || 0})
+                    </button>
+                </div>
+                <div class="reply-form-${index}" style="display: none; margin-top: 10px;">
+                    <textarea class="message-input" placeholder="写下你的回复..."></textarea>
+                    <button class="btn btn-primary" onclick="submitReply(${index})">提交回复</button>
+                </div>
+                ${message.replies && message.replies.length > 0 ? `
+                    <div class="replies" style="margin-left: 20px; margin-top: 10px;">
+                        ${message.replies.map(reply => `
+                            <div class="reply-item" style="background: #f9f9f9; padding: 10px; margin-top: 5px; border-radius: 5px;">
+                                <div class="message-header">
+                                    <span class="user-name">用户${Math.floor(Math.random() * 1000)}</span>
+                                    <span class="time">${reply.date}</span>
+                                </div>
+                                <div class="message-content">
+                                    ${reply.content}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
+        `).join('');
+    }
+
+    // 初始渲染
+    renderMessages();
+
+    // 点赞功能
+    window.toggleLike = function(index) {
+        if (!messages[index].liked) {
+            messages[index].likes = (messages[index].likes || 0) + 1;
+            messages[index].liked = true;
+            localStorage.setItem('forumMessages', JSON.stringify(messages));
+            renderMessages();
+        }
+    };
+
+    // 显示/隐藏回复表单
+    window.showReplyForm = function(index) {
+        const replyForm = document.querySelector(`.reply-form-${index}`);
+        replyForm.style.display = replyForm.style.display === 'none' ? 'block' : 'none';
+    };
+
+    // 提交回复
+    window.submitReply = function(index) {
+        const replyForm = document.querySelector(`.reply-form-${index}`);
+        const content = replyForm.querySelector('textarea').value.trim();
+        
+        if (content) {
+            if (!messages[index].replies) messages[index].replies = [];
+            messages[index].replies.push({
+                content: content,
+                date: new Date().toLocaleString()
+            });
+            localStorage.setItem('forumMessages', JSON.stringify(messages));
+            renderMessages();
+            replyForm.querySelector('textarea').value = '';
+            replyForm.style.display = 'none';
+        }
+    };
+
+    // 处理新留言提交
+    messageForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const textarea = this.querySelector('textarea');
+        const content = textarea.value.trim();
+
+        if (content) {
+            messages.unshift({
+                content: content,
+                date: new Date().toLocaleString(),
+                likes: 0,
+                replies: []
+            });
+            localStorage.setItem('forumMessages', JSON.stringify(messages));
+            renderMessages();
+            textarea.value = '';
+        }
+    });
+});
+</script>
+
+<style>
+    .nav-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #654747;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 16px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+        background-color: #7a5858;
+        transform: translateY(-2px);
+    }
+</style>
+
+<a href="index-3.html" class="nav-button">返回首页</a>

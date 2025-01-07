@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族风俗习惯</title>
+    <style>
+        /* 整体样式 */
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* 导航栏样式 */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #8B4513;
+            padding: 15px 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        /* 主要内容区域样式 */
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 20px;
+        }
+
+        /* 板块样式 */
+        .section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: #8B4513;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 节日庆典样式 */
+        .festival {
+            margin: 20px 0;
+        }
+
+        .festival-title {
+            color: #D2691E;
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+
+        /* 图片展示区域 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* 美食展示样式 */
+        .food-item {
+            display: flex;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .food-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        /* 婚丧习俗样式 */
+        .custom-content {
+            line-height: 1.6;
+        }
+
+        /* 互动区域样式 */
+        .interaction {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        .comment-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .food-item {
+                flex-direction: column;
+            }
+
+            .food-item img {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <a href="#" id="index-3">首页</a>
+        <a href="#festivals">节日庆典</a>
+        <a href="#food">饮食文化</a>
+        <a href="#customs">婚丧习俗</a>
+    </nav>
+
+    <div class="container">
+        <!-- 节日庆典部分 -->
+        <section id="festivals" class="section">
+            <h2 class="section-title">节日庆典</h2>
+            
+            <div class="festival">
+                <h3 class="festival-title">火把节</h3>
+                <div class="custom-content">
+                    <h4>由来</h4>
+                    <p>彝族火把节由来有多种说法。一是源于对火的崇拜，古时火对彝族先民生存至关重要，为感恩和彰显火的神圣，便有了围绕火的庆祝活动，慢慢演变成火把节。二是纪念英雄黑体拉巴，他战胜作恶恶魔，人们燃火把欢庆、纪念他。还有说法是曾庄稼遇虫害，用火把驱虫后获丰收，为感恩并祈愿年年丰收，
+                        就把这天定为火把节。这些传说让火把节蕴含深厚文化内涵，成为彝族极具特色且意义非凡的重要节日。 </p>
+                    
+                    <h4>时间</h4>
+                    <p>农历六月二十四日（各地可能略有差异）</p>
+                    
+                    <div class="image-gallery">
+                        <img src="images/huobaj.webp" alt="火把节庆祝场景">
+                        <img src="images/yx.webp" alt="火把节游行">
+                        <img src="images/xmei.webp" alt="火把节活动">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 其他节日类似结构 -->
+        </section>
+
+        <!-- 饮食文化部分 -->
+        <section id="food" class="section">
+            <h2 class="section-title">饮食文化</h2>
+            
+            <div class="food-item">
+                <img src="images/tt.webp" alt="坨坨肉">
+                <div>
+                    <h3>坨坨肉</h3>
+                    <p>主要原料：当地黑猪肉</p>
+                    <p>制作方法：坨坨肉制作简单。先选优质的猪肉，一般带皮切成大块，每块约二三两重，形似坨状。接着冷水下锅，
+                        加入适量姜片、花椒等佐料，大火烧开后转小火慢炖，直至肉熟软。捞出后撒上葱花、香菜等，坨坨肉便做好了，吃起来肉质鲜香，口感醇厚。 </p>
+                </div>
+            </div>
+            
+            <!-- 其他美食类似结构 -->
+        </section>
+
+        <!-- 婚丧习俗部分 -->
+        <section id="customs" class="section">
+            <h2 class="section-title">婚丧习俗</h2>
+            
+            <div class="custom-content">
+                <h3>婚姻习俗</h3>
+                <p>彝族有着独特且丰富的婚姻习俗。
+
+                    说亲环节，男方请媒人带上酒等礼品前往女方家说媒，若女方家接受并饮酒，便算应允。之后定亲，商定彩礼等事宜。到了迎亲之日，男方迎亲队伍热闹前往，新娘身着精美传统服饰，盖着盖头被迎走。途中常遇“泼水”“抹黑脸”等有趣仪式，寓意祝福新人。
+                    
+                    婚后，夫妻相互尊重、携手持家，遵循彝族传统的家庭伦理，敬长辈、爱晚辈，共同经营生活，在这些习俗里尽显彝族的文化韵味与民族特色。 </p>
+                
+                <div class="image-gallery">
+                    <img src="images/li.webp" alt="彝族婚礼服饰">
+                    <img src="images/hh.webp" alt="彝族婚礼仪式">
+                </div>
+            </div>
+        </section>
+
+        <!-- 互动区域 -->
+        <div class="interaction">
+            <h3>评论与交流</h3>
+            <div class="comment-section">
+                <textarea class="comment-input" placeholder="分享您的想法..."></textarea>
+                <button class="submit-btn">发表评论</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 返回首页功能
+        document.getElementById('home').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'index.html';
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取DOM元素
+    const commentForm = document.querySelector('.comment-section');
+    const commentTextarea = commentForm.querySelector('.comment-input');
+    const submitButton = commentForm.querySelector('.submit-btn');
+
+    // 创建评论列表容器
+    const commentsList = document.createElement('div');
+    commentsList.className = 'comments-list';
+    commentForm.appendChild(commentsList);
+
+    // 从localStorage获取评论数据
+    let comments = JSON.parse(localStorage.getItem('customsComments') || '[]');
+
+    // 渲染评论列表
+    function renderComments() {
+        commentsList.innerHTML = comments.map((comment, index) => `
+            <div class="comment-item" style="margin: 15px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="color: #666;">游客${Math.floor(Math.random() * 1000)}</span>
+                    <span style="color: #999;">${comment.date}</span>
+                </div>
+                <div style="margin: 10px 0;">${comment.content}</div>
+                <div>
+                    <button onclick="likeComment(${index})" style="background: none; border: none; color: #666; cursor: pointer;">
+                        👍 ${comment.likes || 0}
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // 提交评论
+    submitButton.addEventListener('click', function() {
+        const content = commentTextarea.value.trim();
+        
+        if(content) {
+            comments.unshift({
+                content: content,
+                date: new Date().toLocaleString(),
+                likes: 0
+            });
+            
+            localStorage.setItem('customsComments', JSON.stringify(comments));
+            renderComments();
+            commentTextarea.value = '';
+        }
+    });
+
+    // 点赞功能
+    window.likeComment = function(index) {
+        comments[index].likes = (comments[index].likes || 0) + 1;
+        localStorage.setItem('customsComments', JSON.stringify(comments));
+        renderComments();
+    };
+
+    // 初始渲染评论
+    renderComments();
+});
+</script>
+
+<style>
+.comment-section {
+    margin: 20px 0;
+}
+
+.comment-input {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #8B4513;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #6b3410;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment-item {
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.comment-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取所有导航链接
+    const navLinks = document.querySelectorAll('.nav a');
+    
+    // 为每个导航链接添加点击事件监听器
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // 获取链接文本内容
+            const linkText = this.textContent.trim();
+            
+            // 根据链接文本进行页面跳转
+            switch(linkText) {
+                case '首页':
+                    window.location.href = 'index-3.html';
+                    break;
+                case '风俗习惯':
+                    window.location.href = 'fengsu.html';
+                    break;
+                case '宗教信仰':
+                    window.location.href = 'zhongjiaoxinyang.html';
+                    break;
+                case '文化艺术':
+                    window.location.href = 'yishucjiu.html';
+                    break;
+                default:
+                    // 如果没有匹配的链接，保持在当前页面
+                    break;
+            }
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取所有导航链接
+    const festivalLink = document.querySelector('a[href="#festivals"]');
+    const foodLink = document.querySelector('a[href="#food"]');
+    const customsLink = document.querySelector('a[href="#customs"]');
+    
+    // 为节日庆典链接添加点击事件
+    if (festivalLink) {
+        festivalLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('festivals').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // 为饮食文化链接添加点击事件 
+    if (foodLink) {
+        foodLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('food').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // 为婚丧习俗链接添加点击事件
+    if (customsLink) {
+        customsLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('customs').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>

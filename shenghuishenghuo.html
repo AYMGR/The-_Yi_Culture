@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族服饰文化</title>
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* 导航栏样式 */
+        .nav {
+            background: #8B4513;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 轮播图样式 */
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .carousel-inner {
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .carousel-item.active {
+            opacity: 1;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 板块样式 */
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: #8B4513;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #8B4513;
+        }
+
+        /* 图片网格样式 */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .image-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* 内容布局样式 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .sidebar {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            line-height: 1.6;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .carousel {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <a href="#overview">服饰概述</a>
+        <a href="#types">服饰种类</a>
+        <a href="#elements">构成要素</a>
+        <a href="#crafts">制作工艺</a>
+        <a href="#modern">现代生活</a>
+    </nav>
+
+    <div class="container">
+        <!-- 轮播图区域 -->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/yifu3.png" alt="彝族传统服饰展示">
+                </div>
+                <!-- 更多轮播图项... -->
+            </div>
+        </div>
+
+        <!-- 服饰概述 -->
+        <section id="overview" class="section">
+            <h2 class="section-title">服饰概述</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <h3>历史渊源</h3>
+                    <p>彝族服饰有着悠久且复杂的历史渊源，其发展历程与彝族的整个历史变迁、地域迁徙以及对外交流融合等诸多因素紧密交织。
+                        从考古发现来看，在云南石寨山、李家山等地出土的青铜器上，有不少人物形象身着具有早期彝族服饰特征的服装，这些青铜器的年代可追溯到战国至汉代时期，那时的服饰已初现端倪，能看出其基本的款式特点，比如上衣下裳的搭配以及简单的装饰元素，这表明彝族服饰在很早以前就有了相对固定的形态雏形。
+                        在历史的长河中，彝族经历了多次大规模的地域迁徙，从最初的聚居地逐渐向西南各地扩散，不同的地域环境对服饰产生了深远影响。例如，迁至高寒山区的彝族分支，为了适应寒冷气候，其服饰逐渐增加了保暖性较强的元素，像披毡等厚重的衣物开始出现并不断演变；而迁徙到气候相对温和地区的彝族群体，服饰则在款式和材质上更偏向轻便、透气。
+                        同时，彝族与周边民族的交流融合也在服饰发展中留下了深刻印记。在与汉族、藏族、苗族等民族长期的交往过程中，相互借鉴吸收了不少服饰元素。据古籍记载，在明清时期，彝族与汉族的商贸往来频繁，彝族服饰中的刺绣工艺就受到了汉族刺绣文化的影响，针法变得更加多样，图案也更加细腻丰富；而在与藏族的交流中，部分彝族地区的服饰在配饰方面，像腰带、帽子等的样式和装饰风格上融入了藏族服饰的一些特色元素，使其更加多元且独具韵味。
+                        随着时间的推移，彝族服饰在保留自身核心特征的基础上，不断融合新元素、适应新环境，逐渐形成了如今我们所看到的各具地域特色、风格多样且内涵丰富的完整服饰体系。</p>
+                    <h3>文化内涵</h3>
+                    <p>彝族服饰蕴含着深厚且多元的文化内涵，它不仅仅是一种外在的穿着装饰，更是彝族民族精神与文化传承的重要载体。
+                        服饰上的图案往往承载着丰富的寓意，与彝族的宗教信仰息息相关。例如，常见的日月星辰图案，代表着彝族人民对天体的崇拜，他们认为日月星辰主宰着世间万物的生长与轮回，将这些元素绣制在服饰上，寓意着能得到上天的庇佑，祈求风调雨顺、生活安康。而山川河流图案，则体现了彝族对自然的敬畏之情，他们视大自然为生命的源泉，将山川河流的形象融入服饰，象征着大地的滋养与守护，期望家族能像山川一样稳固，生活如河流般顺畅。
+                        色彩在彝族服饰中同样有着深刻的象征意义，且与彝族的神话传说、图腾崇拜紧密相连。黑色在彝族服饰中占据重要地位，常被视为庄重、高贵的象征，这源于彝族古老的图腾崇拜，传说彝族的祖先曾受到黑色神鸟的庇佑，所以黑色备受尊崇，在很多重要场合的服饰中多以黑色为底色，彰显神圣与庄严。红色代表着热情、勇敢以及生命的活力，它与彝族的神话故事中英雄们的热血事迹相关联，象征着彝族人民面对困难时勇往直前的精神，常见于服饰的边缘装饰、刺绣图案中，为整体服饰增添了一抹亮丽且充满力量感的色彩。
+                        另外，像花鸟鱼虫等图案也有着美好的寓意，如蝴蝶图案象征着繁衍与美好爱情，因为蝴蝶在彝族传说中是爱情的使者，寓意着家族人丁兴旺、夫妻和睦；石榴图案则寓意着多子多福，表达了彝族人民对家族繁荣昌盛的殷切期盼。
+                        总之，彝族服饰通过图案、色彩等各种元素，将民族的宗教信仰、神话传说、图腾崇拜以及对自然和生活的美好期许等文化内涵巧妙地融合在一起，代代相传，成为彝族民族文化中璀璨且独特的一部分，展现出彝族深厚且独特的民族文化底蕴。</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="images/gufushi.jpg" alt="历史服饰展示">
+                        <div class="image-caption">古代彝族服饰复原图</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 更多板块内容... -->
+    </div>
+
+    <script>
+        // 轮播图功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.carousel-item');
+            let currentIndex = 0;
+
+            function showNext() {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % items.length;
+                items[currentIndex].classList.add('active');
+            }
+
+            setInterval(showNext, 3000);
+        });
+    </script>
+</body>
+</html>
+        <!-- 服饰种类 -->
+        <section id="types" class="section">
+            <h2 class="section-title">服饰种类</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <h3>男装特点</h3>
+                    <p>1. 日常劳作服饰
+                        款式上，上衣多为窄袖对襟或大襟短衣，下装是宽松长裤，便于劳作活动。颜色以黑色、深蓝色等深色系为主，搭配少量浅色镶边。配饰有棉质头帕、简单腰带及自制布鞋或草鞋，实用且方便劳作。
+                        2. 节日庆典服饰
+                        上衣是大襟右衽长袍，袖口、领口有精美刺绣，外披带装饰的擦尔瓦，下装宽脚裤且裤脚也有刺绣。色彩鲜艳丰富，用红、黄、绿等亮色点缀。配饰含英雄结、银质耳环、项链、华丽腰带及绣花布鞋，尽显喜庆与潇洒。
+                        3. 祭祀仪式服饰
+                        上衣大襟右衽，规整简洁，下装纯色宽脚裤，外披质感好的擦尔瓦，整体颜色深沉。配饰如规整的英雄结、精良的银质耳环、有辟邪寓意的珠子项链、皮质雕花腰带及简洁布鞋，凸显庄重肃穆。</p>
+                    <h3>女装特色</h3>
+                    <p>1. 少女服饰
+                        上衣短款，对襟或斜襟样式，领口、袖口有装饰，下装是色彩斑斓的百褶裙，搭配坎肩。色彩鲜艳明快，用大红、粉红等亮色组合。配饰有绣花头帕、彩色腰带及多样精美的首饰，充满青春活力。
+                        2. 已婚妇女服饰
+                        上衣长款大襟右衽，领口、袖口、前襟刺绣复杂，下装百褶裙搭配围裙，裙摆长且褶子宽大厚重。色彩以深色系为底，用红、金等色点缀。发饰、项链、腰带等配饰更华丽精致，展现端庄成熟韵味。</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="images/zhonglei.jpg" alt="服饰种类展示">
+                        <div class="image-caption">传统彝族服饰种类展示</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 构成要素 -->
+        <section id="elements" class="section">
+            <h2 class="section-title">构成要素</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <h3>色彩搭配</h3>
+                    <p>彝族服饰的色彩搭配独具韵味且饱含象征意义。常见的红色，热烈奔放，象征着彝族人民的热情好客与对生活的热爱，常出现在领口、
+                        袖口的刺绣或腰带装饰处，为整体添活力。黑色庄重肃穆，体现民族的威严与对传统的尊崇，多作为底色。黄色寓意丰收，常见于衣角、裙摆，寄托对富足生活的期盼。
+                        像在一套传统彝族女装中，黑色裙摆搭配红色刺绣、黄色镶边，色彩相互映衬，彰显出独特文化魅力，不同色彩组合诉说着彝族的故事与情感。</p>
+                    <h3>图案纹饰</h3>
+                    <p>彝族服饰上的图案纹样丰富多样，承载着深厚文化内涵。日月星辰图案，源于对天体的崇拜，寓意光明与希望，常绣于肩部、背部等显眼位置，仿佛赋予穿着者上天的庇佑。山川河流纹样，体现对自然敬畏，
+                        象征大地滋养，多在裙摆、衣摆处呈现，展现与自然共生的情怀。花鸟鱼虫也常见，如蝴蝶象征美好爱情，常飞舞于领口、袖口。几何图形则讲究对称布局，规整美观，或有守护之意。通过高清图放大细节，
+                        能欣赏到刺绣、印染工艺之精妙，感受其独特艺术价值。</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="images/yaoshu.jpg" alt="服饰要素展示">
+                        <div class="image-caption">传统图案与色彩展示</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 制作工艺 -->
+        <section id="crafts" class="section">
+            <h2 class="section-title">制作工艺</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <h3>传统技艺</h3>
+                    <p>彝族服饰制作工艺精湛，涵盖了诸多独特的传统技艺。织造方面，彝族人民擅长运用羊毛、麻、棉等天然材料，通过手工纺织，将其捻成粗细均匀的线，再按照一定的经纬规律织就出结实又美观的布料，
+                        不同材质的选择和织法运用可打造出适合不同服饰部位的面料。刺绣更是一绝，针法丰富多样，像平针绣、回针绣等，绣娘们用五彩丝线在衣物上绣出花鸟鱼虫、几何图案等精美纹样，细腻且生动。
+                        印染工艺也别具特色，采用天然植物染料，运用扎染、蜡染手法，呈现出色彩古朴又自然的独特效果，尽显彝族服饰的艺术魅力。</p>
+                    <h3>工艺传承</h3>
+                    <p>这些珍贵的传统工艺技术通过代代相传得以保存和发展。在彝族的家庭中，长辈们会从小就向晚辈传授服饰制作技艺，女孩们跟着母亲、祖母学习刺绣针法、印染诀窍等，在耳濡目染中传承这门手艺。
+                        同时，在一些彝族聚居的村落，还会有老艺人开设技艺传承课堂，手把手教年轻人完整的制作工艺，让他们深入了解传统服饰背后的文化底蕴。而且，如今也借助文化展览、非遗进校园等活动，
+                        进一步扩大传统工艺的影响力，吸引更多人参与传承，使其在新时代持续焕发光彩。</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="images/gongyi.jpg" alt="制作工艺展示">
+                        <div class="image-caption">传统制作工艺展示</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 现代生活 -->
+        <section id="modern" class="section">
+            <h2 class="section-title">现代生活</h2>
+            <div class="content-grid">
+                <div class="main-content">
+                    <h3>现代演变</h3>
+                    <p>在现代社会中，彝族服饰在保持传统特色的同时也在不断创新发展。随着生活方式的改变，彝族服饰的实用性功能得到进一步拓展，材质上除了传统的棉、麻、羊毛，也融入了新型舒适且耐用的面料。
+                        款式方面，传统的大襟、对襟样式有了更多改良，变得更贴合现代人的穿着习惯，比如缩短衣长、收窄袖口等。而且在装饰细节上，既保留了像刺绣、银饰等经典元素，又简化了一些过于繁杂的工艺，
+                        使其更简洁大方，能适应日常出行、休闲娱乐等多种现代生活场景，让彝族服饰在新时代依然焕发生机。</p>
+                    <h3>时尚融合</h3>
+                    <p>传统彝族服饰元素与现代时尚的结合，展现出新的民族文化魅力。在诸多时尚秀场中，彝族的刺绣图案被巧妙运用到现代服装设计里，那精美的花鸟、几何纹样点缀在简约的连衣裙、外套上，碰撞出别样的美感。
+                        传统的色彩搭配，如黑、红、黄等，也常被用于打造时尚单品，彰显独特风格。还有彝族的银质配饰，经过重新设计，与现代的金属链条、皮革等搭配，成为潮流的项链、手链等，让彝族服饰元素在时尚舞台上大放异彩，
+                        也让民族文化得以更广泛传播。</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="images/xiandaifus.jpg" alt="现代服饰展示">
+                        <div class="image-caption">现代彝族服饰展示</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <style>
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                margin: 20px 0;
+            }
+
+            .image-item {
+                width: 100%;
+            }
+
+            .image-item img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+                display: block;
+            }
+
+            .image-caption {
+                text-align: center;
+                margin-top: 10px;
+                color: #666;
+            }
+
+            @media (max-width: 768px) {
+                .image-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        <style>
+            .carousel {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .carousel-inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+            .carousel-item {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .carousel-item.active {
+                opacity: 1;
+            }
+
+            .carousel-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+            }
+        </style>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取返回首页链接元素
+            const homeLink = document.querySelector('a[href="/"]');
+            
+            // 为返回首页链接添加点击事件
+            if (homeLink) {
+                homeLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = 'index-3.html';
+                });
+            }
+        });
+        </script>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族宗教信仰</title>
+    <style>
+        /* 整体样式 */
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5 url('images/yi-pattern-bg.png') repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 导航栏 */
+        .nav {
+            background: #000;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+
+        /* 主要内容区域 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* 分区样式 */
+        .section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .primitive-religion {
+            border-left: 5px solid #8B0000;
+        }
+
+        .modern-religion {
+            border-left: 5px solid #4B0082;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3 {
+            color: #8B0000;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 0.5rem;
+        }
+
+        /* 图片样式 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 视频样式 */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin: 1rem 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 留言区样式 */
+        .comment-section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .comment-form button {
+            background: #8B0000;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <a href="/">首页</a>
+        <a href="/customs">风俗习惯</a>
+        <a href="#" class="active">宗教信仰</a>
+    </nav>
+
+    <div class="container">
+        <!-- 原始宗教部分 -->
+        <section class="section primitive-religion">
+            <h2>原始宗教</h2>
+            
+            <div class="subsection">
+                <h3>万物有灵观念</h3>
+                <p>彝族传统信仰有着独特而深邃的内涵，秉持着世间万物皆有灵性这一观念。在彝族人民眼中，山川巍峨耸立，那不仅仅是大地的脊梁，更被视作有着神秘力量的存在，其蕴含的灵魂仿佛能左右一方水土的安宁与丰饶；河流奔腾不息，河水所承载的灵魂被认为关乎着沿岸生灵的繁衍与兴旺。
+                    树木郁郁葱葱，每一棵都像是大自然赋予的守护者，其灵魂被相信有着庇佑村落、带来祥瑞的能力；就连那看似寻常的石头，
+                    也被赋予了特殊的灵魂，或象征着坚韧，或寓意着守护，在彝族的生活里，它们都能以无形的力量影响着人们日常的劳作、家庭的和睦以及整个族群的运势，这种信仰深深扎根于彝族的文化土壤之中，代代传承，影响着他们生活的方方面面。 </p>
+                <div class="image-gallery">
+                    <img src="images/ji.jpg" alt="山神崇拜">
+                    <img src="images/shumu.webp" alt="树木祭祀">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>自然神灵与祖先神灵崇拜</h3>
+                <p>彝族人民有着深厚的传统信仰，对诸多神灵满怀崇敬。
+
+                    自然神灵中，天神主宰万物生息，遇天灾或祈愿丰收时，人们会向其祭祀求庇佑；地神守护大地，开垦播种前人们会感恩、祈愿土地肥沃。山神掌控山林资源，进山时彝族民众会祭拜求平安与收获。水神关乎水源，人们常于水边祭祀，盼水流不断。
+                    
+                    而祖先神灵更受敬重，被视作家族传承源头，其灵魂被认为在冥冥中护佑子孙。重要时刻，族人们会在祠堂、牌位前摆祭品、燃香烛，庄重向祖先汇报情况、
+                    祈求保佑，望家族兴旺、诸事顺遂，也期望传承祖先品德智慧，让家族文化长久延续，这些信仰彰显着彝族独特文化魅力。 </p>
+                <div class="image-gallery">
+                    <img src="images/jisi.jpg" alt="祖先祭祀">
+                    <img src="images/ziran.webp" alt="毕摩祭祀">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>毕摩的角色与职能</h3>
+                <p>毕摩是彝族传统宗教文化的传承者，担任着沟通人神的重要角色。</p>
+                <div class="video-container">
+                    <iframe src="videos/bimo.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- 留言区 -->
+        <section class="comment-section">
+            <h3>留言讨论</h3>
+            <form class="comment-form">
+                <textarea placeholder="分享您的想法..." rows="4"></textarea>
+                <button type="submit">发表留言</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // 图片加载错误处理
+        document.querySelectorAll('img').forEach(img => {
+            img.onerror = function() {
+                this.src = 'images/placeholder.jpg';
+            }
+        });
+
+        // 留言提交处理
+        document.querySelector('.comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 这里添加留言提交的逻辑
+            alert('感谢您的留言！');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取DOM元素
+    const commentForm = document.querySelector('.comment-form');
+    const commentsList = document.createElement('div');
+    commentsList.className = 'comments-list';
+    document.querySelector('.comment-section').appendChild(commentsList);
+
+    // 从localStorage获取留言数据
+    let messages = JSON.parse(localStorage.getItem('religionComments') || '[]');
+
+    // 渲染留言列表
+    function renderMessages() {
+        commentsList.innerHTML = messages.map((message, index) => `
+            <div class="comment-item">
+                <div class="comment-header">
+                    <span class="comment-user">游客${Math.floor(Math.random() * 1000)}</span>
+                    <span class="comment-date">${message.date}</span>
+                </div>
+                <div class="comment-content">${message.content}</div>
+                <div class="comment-actions">
+                    <button onclick="likeMessage(${index})">
+                        👍 ${message.likes || 0}
+                    </button>
+                    <button onclick="showReplyForm(${index})">回复</button>
+                </div>
+                <div class="reply-form-${index}" style="display: none;">
+                    <textarea placeholder="写下你的回复..."></textarea>
+                    <button onclick="submitReply(${index})">提交回复</button>
+                </div>
+                ${message.replies ? message.replies.map(reply => `
+                    <div class="reply-item">
+                        <div class="reply-content">${reply.content}</div>
+                        <div class="reply-date">${reply.date}</div>
+                    </div>
+                `).join('') : ''}
+            </div>
+        `).join('');
+    }
+
+    // 点赞功能
+    window.likeMessage = function(index) {
+        if (!messages[index].likes) messages[index].likes = 0;
+        messages[index].likes++;
+        localStorage.setItem('religionComments', JSON.stringify(messages));
+        renderMessages();
+    };
+
+    // 显示/隐藏回复表单
+    window.showReplyForm = function(index) {
+        const replyForm = document.querySelector(`.reply-form-${index}`);
+        replyForm.style.display = replyForm.style.display === 'none' ? 'block' : 'none';
+    };
+
+    // 提交回复
+    window.submitReply = function(index) {
+        const replyForm = document.querySelector(`.reply-form-${index}`);
+        const content = replyForm.querySelector('textarea').value.trim();
+        
+        if (content) {
+            if (!messages[index].replies) messages[index].replies = [];
+            messages[index].replies.push({
+                content: content,
+                date: new Date().toLocaleString()
+            });
+            localStorage.setItem('religionComments', JSON.stringify(messages));
+            renderMessages();
+            replyForm.querySelector('textarea').value = '';
+            replyForm.style.display = 'none';
+        }
+    };
+
+    // 处理新留言提交
+    commentForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const textarea = this.querySelector('textarea');
+        const content = textarea.value.trim();
+
+        if (content) {
+            messages.unshift({
+                content: content,
+                date: new Date().toLocaleString(),
+                likes: 0,
+                replies: []
+            });
+            localStorage.setItem('religionComments', JSON.stringify(messages));
+            renderMessages();
+            textarea.value = '';
+        }
+    });
+
+    // 初始渲染留言
+    renderMessages();
+});
+</script>
+
+<style>
+.comment-section {
+    margin: 20px 0;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.comment-form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #6b3410;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comment-user {
+    color: #666;
+    font-weight: bold;
+}
+
+.comment-date {
+    color: #999;
+}
+
+.comment-content {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.comment-actions button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.comment-actions button:hover {
+    color: #8B4513;
+}
+
+.reply-item {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.reply-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取导航链接
+    const navLinks = document.querySelectorAll('.nav a');
+    
+    // 为每个导航链接添加点击事件
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // 根据链接文本决定跳转行为
+            switch(this.textContent) {
+                case '首页':
+                    window.location.href = 'index-3.html';
+                    break;
+                case '风俗习惯':
+                    window.location.href = 'xinguang.html';
+                    break;
+                case '宗教信仰':
+                    window.location.href = 'zhongjiaoxinyang.html';
+                    break;
+                default:
+                    // 如果是页内导航，滚动到对应部分
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                    break;
+            }
+        });
+    });
+});
+</script>
+
+

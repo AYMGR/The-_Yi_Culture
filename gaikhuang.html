@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族概况</title>
+    <style>
+        /* 整体布局 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* 导航栏 */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #8B4513;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* 主要内容区 */
+        .main-content {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        /* 图片展示区 */
+        .image-section {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 文字内容区 */
+        .text-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* 民族特色装饰元素 */
+        .yi-pattern {
+            border: 2px solid #8B4513;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            background-image: url('yi-pattern-bg.png');
+            background-size: contain;
+        }
+
+        /* 地图展示 */
+        .distribution-map {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        /* 多媒体内容 */
+        .video-section {
+            margin: 30px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 互动区域 */
+        .interaction-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .comment-form {
+            margin: 20px 0;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-section {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="/">返回首页</a>
+            <div>
+                <a href="#intro">民族简介</a>
+                <a href="#distribution">人口分布</a>
+                <a href="#environment">自然环境</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <div class="main-content">
+        <!-- 左侧图片展示区 -->
+        <div class="image-section">
+            <img src="images/meiniu.webp" alt="彝族人民">
+            <img src="images/guc.webp" alt="彝族地区风光">
+            <img src="images/jinshu.webp" alt="彝族文化">
+        </div>
+
+        <!-- 右侧文字内容区 -->
+        <div class="text-content">
+            <!-- 民族简介 -->
+            <section id="intro" class="yi-pattern">
+                <h2>民族简介</h2>
+                <p>彝族是中国第六大少数民族，主要分布于滇、川、黔、桂等地。有着悠久历史与独特文化，语言属汉藏语系藏缅语族彝语支，文字历史久远。彝族人民能歌善舞，传统节日如火把节、彝族年热闹非凡，其特色服饰、建筑等尽显民族风情。 </p>
+            </section>
+
+            <!-- 人口分布 -->
+            <section id="distribution">
+                <h2>人口分布</h2>
+                <p>彝族是我国具有重要影响力的少数民族之一，在人口分布方面有着鲜明特点。
+
+                    据统计，彝族人口数量可观，广泛分布于我国西南地区的云南、四川、贵州、广西四省（区）。其中，云南省的彝族人口最为集中，楚雄彝族自治州、红河哈尼族彝族自治州等地，处处都有彝族村寨星罗棋布，彝族同胞们在这里世代繁衍，传承着本民族悠久灿烂的文化，其独特的风俗习惯、传统建筑等成为当地别具魅力的人文标识。
+                    
+                    四川省的凉山彝族自治州同样是彝族的重要聚居区域，高山深谷间生活着大量彝族群众，他们以畜牧、农耕等方式安居乐业，火把节、彝族年等盛大节日的热闹氛围更是弥漫在这片广袤土地上。
+                    
+                    在贵州省，毕节市等多地也分布着众多彝族村落，他们与其他民族共同生活，相互交流融合，为当地的多元文化增添了绚丽色彩。广西壮族自治区虽彝族人口相对少些，但在隆林各族自治县等地也有着彝族聚居群落，延续着独特的民族传统，共同书写着彝族在这片土地上的生活篇章，展现出彝族分布广泛且独具韵味的民族风貌。 </p>
+                <div id="distribution-map" class="distribution-map"></div>
+                <div class="yi-pattern">
+                    <h3>主要聚居地区</h3>
+                    <ul>
+                        <li>云南楚雄彝族自治州</li>
+                        <li>云南红河哈尼族彝族自治州</li>
+                        <li>四川凉山彝族自治州</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 自然环境 -->
+            <section id="environment">
+                <h2>自然环境</h2>
+                <div class="yi-pattern">
+                    <h3>地形地貌</h3>
+                    <p>彝族聚居地区地形地貌多样，有高山深谷，如四川凉山山脉峡谷交错；有高原，像云南部分高原利于畜牧；还有丘陵，便于彝族人民开垦梯田开展农耕，滋养独特民族文化。</p>
+                </div>
+                
+                <div class="yi-pattern">
+                    <h3>气候条件</h3>
+                    <p>彝族地区气候条件复杂多样，包括亚热带季风气候、高寒气候</p>
+                </div>
+
+                <div class="yi-pattern">
+                    <h3>自然资源</h3>
+                    <ul>
+                        <li>水电资源：溪洛渡、锦屏一级、官地等大型水电站</li>
+                        <li>矿产资源：稀土、铅、锌、铜、铁等</li>
+                        <li>林业资源：马尾松、云南松、飞松等</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 视频展示区 -->
+            <section class="video-section">
+                <h2>视频资料</h2>
+                <div class="video-container">
+                    <iframe src="videos/spzl.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 互动区域 -->
+            <section class="interaction-section">
+                <h2>留言互动</h2>
+                <form class="comment-form">
+                    <textarea placeholder="分享您的想法..." rows="4"></textarea>
+                    <button type="submit">发表评论</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // 地图初始化
+        function initMap() {
+            // 使用地图API初始化彝族分布地图
+        }
+
+        // 评论功能
+        document.querySelector('.comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 处理评论提交
+        });
+    </script>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentForm = document.querySelector('.comment-form');
+        const commentsContainer = document.createElement('div');
+        commentsContainer.className = 'comments-container';
+        commentForm.parentNode.insertBefore(commentsContainer, commentForm.nextSibling);
+
+        // 存储评论的数组
+        let comments = JSON.parse(localStorage.getItem('comments') || '[]');
+
+        // 渲染现有评论
+        function renderComments() {
+            commentsContainer.innerHTML = comments.map((comment, index) => `
+                <div class="comment" style="margin: 1rem 0; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="color: #654747;">访客 #${index + 1}</span>
+                        <span style="color: #999; font-size: 0.9rem;">${comment.date}</span>
+                    </div>
+                    <p style="margin: 0;">${comment.content}</p>
+                </div>
+            `).join('');
+        }
+
+        // 初始渲染评论
+        renderComments();
+
+        // 处理评论提交
+        commentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const textarea = this.querySelector('textarea');
+            const content = textarea.value.trim();
+
+            if (content) {
+                // 创建新评论对象
+                const newComment = {
+                    content: content,
+                    date: new Date().toLocaleString()
+                };
+
+                // 添加到评论数组
+                comments.unshift(newComment);
+                
+                // 保存到localStorage
+                localStorage.setItem('comments', JSON.stringify(comments));
+
+                // 重新渲染评论
+                renderComments();
+
+                // 清空输入框
+                textarea.value = '';
+
+                // 显示成功提示
+                const successMessage = document.createElement('div');
+                successMessage.textContent = '评论发表成功！';
+                successMessage.style.color = '#4CAF50';
+                successMessage.style.marginTop = '0.5rem';
+                this.appendChild(successMessage);
+
+                // 3秒后移除成功提示
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 3000);
+            }
+        });
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取返回首页链接元素
+    const homeLink = document.querySelector('a[href="/"]');
+    
+    // 为返回首页链接添加点击事件
+    if (homeLink) {
+        homeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'index-3.html';
+        });
+    }
+});
+</script>
+
