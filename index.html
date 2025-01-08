@@ -328,3 +328,28 @@
     </script>
 </body>
 </html>
+    <script>
+        // 轮播图功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            let currentIndex = 0;
+
+            // 显示当前图片
+            function showSlide(index) {
+                carouselItems.forEach(item => item.style.opacity = '0');
+                carouselItems[index].style.opacity = '1';
+            }
+
+            // 切换到下一张图片
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % carouselItems.length;
+                showSlide(currentIndex);
+            }
+
+            // 初始显示第一张图片
+            showSlide(0);
+
+            // 每5秒自动切换图片
+            setInterval(nextSlide, 5000);
+        });
+    </script>
