@@ -250,10 +250,19 @@
             const items = document.querySelectorAll('.carousel-item');
             let currentItem = 0;
 
+            // 初始化第一张图片为显示状态
+            items[0].classList.add('active');
+
             function nextSlide() {
-                items[currentItem].classList.remove('active');
+                // 确保当前图片存在
+                if(items[currentItem]) {
+                    items[currentItem].classList.remove('active');
+                }
                 currentItem = (currentItem + 1) % items.length;
-                items[currentItem].classList.add('active');
+                // 确保下一张图片存在
+                if(items[currentItem]) {
+                    items[currentItem].classList.add('active');
+                }
             }
 
             setInterval(nextSlide, 5000);
